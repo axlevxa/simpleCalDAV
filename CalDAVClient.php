@@ -145,7 +145,8 @@ class CalDAVClient {
       $dav_options = $this->DoOptionsRequestAndGetDAVHeader();
       $valid_caldav_server = isset($dav_options['calendar-access']);
 
-      return $valid_caldav_server;
+	  // Accept regardless of headers.
+      return true;
   }
 
   /**
