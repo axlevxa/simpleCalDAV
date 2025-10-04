@@ -23,7 +23,7 @@
 
 class CalDAVObject {
 	private $href;
-	private $data;
+	public $data;
 	private $etag;
 	
 	public function __construct ($href, $data, $etag) {
